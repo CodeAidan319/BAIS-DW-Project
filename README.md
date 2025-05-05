@@ -31,7 +31,7 @@ BAIS3250-NFL-Project/
 ## Repository Walkthrough
 
 ### `/data/`
-This folder contains the main dataset: `NFL_2024_Salary_Performance.xlsx`. It includes player salary information, performance statistics (e.g., passing yards, touchdowns), and PFF grades for the 2024 NFL season. Each row represents an individual player-season.
+This folder contains the main dataset: `NFL_2024_Salary_Performance.xlsx`. It includes player salary information, and performance statistics (e.g., passing yards, touchdowns) for the 2024 NFL season. Each row represents an individual player-season.
 
 ### `/notebooks/`
 The `Project_DW2025.ipynb` notebook contains all the code used for web scraping, cleaning, merging, and analyzing the data. It serves as the main script for the entire project.
