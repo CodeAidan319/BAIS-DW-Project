@@ -24,10 +24,9 @@ BAIS3250-NFL-Project/
 │ └── Project_DW2025.ipynb # Jupyter notebook with all scraping, cleaning, and analysis steps
 │
 ├── docs/
-│ └── data_dictionary.md # Definitions and descriptions of all fields in the dataset
+│ └── data_dictionary_final.md # Definitions and descriptions of all fields in the dataset
 │
 ├── README.md # Main project overview and structure (this file)
-└── .gitignore # Optional: to exclude temporary files
 
 ## Repository Walkthrough
 
