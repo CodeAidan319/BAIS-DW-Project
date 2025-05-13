@@ -1,38 +1,21 @@
-# NFL Player Value Analysis (2022–2024)
-BAIS:3250 – Data Wrangling Final Project  
-Author: Aidan Terrill
+# Project Report: NFL Player Value Analysis
 
-## Overview
+This report is the final written component of the BAIS:3250 – Data Wrangling course project. It summarizes my analysis of how NFL player salaries compare to their on-field performance across the 2022–2024 seasons.
 
-This project looks at whether NFL players are paid fairly based on their performance. I focused on quarterbacks (QBs), running backs (RBs), and wide receivers (WRs) during the 2022–2024 seasons. I scraped salary data from OverTheCap and performance stats from Pro Football Reference, then combined the data to see which players and positions offer the most value for what they’re paid.
+## Contents
 
-## Goals
+The report includes:
+- Background on salary efficiency in the NFL
+- Data sources and web scraping methods
+- Custom performance metrics (e.g., Stat_Total, Value_Index)
+- Visualizations of top/bottom players by value
+- Hypothesis testing comparing RBs and QBs
+- Machine learning models predicting salary based on performance
 
-- Compare salary to performance across positions and seasons
-- Create metrics to measure player value
-- Identify underpaid or overpaid players
-- Use machine learning to predict salary from performance
+## Purpose
 
-## Files
+The report explores whether players are being compensated fairly, identifies undervalued and overpaid players, and evaluates how much of salary variation can be explained by performance. It uses real-world data and techniques like scraping, merging, normalization, and regression modeling.
 
-- `Final_NFL_Value_Analysis.ipynb`: Full notebook with scraping, cleaning, and analysis
-- `NFL_Combined_2022_2024.xls`: Final dataset with salary, stats, and value metrics
-- `Project_Report_Final.docx`: Final report with visuals and summary
-- `README.md`: This file
+## File
 
-## Tools Used
-
-- Python (pandas, matplotlib, seaborn, scikit-learn)
-- BeautifulSoup and requests for scraping
-- Jupyter Notebook
-
-## How to Run
-
-1. Open the `.ipynb` notebook
-2. Run each cell in order
-3. Make sure required libraries are installed
-
-## Data Sources
-
-- https://www.pro-football-reference.com/
-- https://overthecap.com/
+- `Project_Report_aterrill.docx`: Full final report with analysis, figures, and conclusions
