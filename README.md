@@ -4,66 +4,55 @@
 
 ## Project Overview
 
-This project analyzes the relationship between NFL player salaries and on-field performance from 2022 to 2024. NFL teams operate under a salary cap, which makes it important to identify players who deliver high value relative to their compensation. The goal is to measure cost-efficiency by comparing player stats to salary data and determining whether certain positions (e.g., RBs, QBs, WRs) are under- or over-valued.
+This project explores whether NFL players are paid fairly based on their performance. It focuses on quarterbacks (QBs), running backs (RBs), and wide receivers (WRs) during the 2022 to 2024 seasons. I scraped salary data from OverTheCap and performance stats from Pro Football Reference, merged and cleaned the datasets, and created metrics to measure player value.
 
-To do this, I scraped salary data from OverTheCap and performance stats from Pro Football Reference. I merged the two datasets, engineered new performance and value metrics, and used a combination of descriptive visualizations, hypothesis testing, and regression modeling to interpret trends.
+The project includes feature engineering, descriptive visualizations, a statistical comparison of positions, and regression models to test whether performance can help predict salary. The results highlight which players and positions are delivering the most value for their compensation.
 
 ## Project Goals
 
-- Evaluate whether player salary is aligned with on-field performance.
-- Identify the most underpaid and overpaid NFL players using custom metrics.
-- Compare average value by position (QB, RB, WR).
-- Use machine learning to predict salary based on performance statistics.
-- Apply statistical testing to compare positional value across the league.
+- Compare salary and performance across player positions.
+- Build a cleaned, merged dataset using web-scraped data.
+- Create metrics like `Stat_Total` and `Value_Index` to measure value.
+- Use Welch’s t-test to compare average value between positions.
+- Apply linear, ridge, and lasso regression to predict salary from performance.
 
 ## Repository Structure
-
 NFL-Player-Value/
 │
 ├── data/
-│   ├── salary_data_2022_2024.csv             # Scraped salary data from OverTheCap  
-│   ├── performance_data_2022_2024.csv        # Scraped performance data from Pro Football Reference  
-│   └── merged_df_final.csv                   # Final cleaned and merged dataset used in the analysis  
+│ └── NFL_Combined_2022_2024.xls # Final dataset with salary, stats, and value metrics
 │
 ├── notebooks/
-│   └── Final_NFL_Value_Analysis.ipynb        # Jupyter notebook with scraping, cleaning, analysis, and modeling  
+│ └── Project_DW2025_AidanTerrill.ipynb # Full notebook with scraping, cleaning, analysis, and ML
 │
 ├── reports/
-│   └── Project_Report_Final.docx             # Final report outlining goals, results, and conclusions  
+│ └── Project_Report_aterrill.docx # Final report summarizing the project
 │
 ├── docs/
-│   └── data_dictionary_final.md              # Full data dictionary describing each field in merged_df  
+│ └── data_dictionary.md # Definitions of all dataset fields
 │
-└── README.md                                 # This file
+└── README.md # This file
+
 
 ## Repository Walkthrough
 
 ### `/data/`
-Contains the raw and cleaned data used for analysis. The `merged_df_final.csv` file includes combined salary and performance data for QBs, RBs, and WRs from 2022–2024, along with normalized metrics and calculated value scores.
+This folder includes `NFL_Combined_2022_2024.xls`, a cleaned dataset containing salary and performance data for QBs, RBs, and WRs from 2022–2024. It also includes normalized columns and custom value metrics used for analysis.
 
 ### `/notebooks/`
-This folder includes the Jupyter notebook with all Python code. It contains:
-- Web scraping with BeautifulSoup and pandas
-- Data cleaning and merging
-- Feature engineering (Stat_Total, Value_Index, etc.)
-- Visualizations and hypothesis testing
-- Machine learning models: Linear, Ridge, and Lasso regression
+Contains the full Jupyter notebook used to run the project. It walks through scraping, cleaning, feature engineering (e.g., `Stat_Total`, `Value_Index`), visualization, hypothesis testing, and machine learning (Linear, Ridge, Lasso).
 
 ### `/reports/`
-Contains the final written report submitted for the course. The report outlines project goals, methods, key findings, visualizations, and conclusions.
+Includes the final written report submitted for BAIS:3250. The report covers the project's goals, key methods, insights from the data, and interpretations of results.
 
 ### `/docs/`
-Includes the data dictionary used in the report. Each column in the final dataset is clearly defined and labeled with type, source, and description.
-
-### `/README.md/`
-The main overview file for the project. Describes the structure of the repository, research goals, and how to run the code.
+Contains the data dictionary describing each column in the final dataset. Useful for understanding how the raw and engineered data fields were defined and used.
 
 ## How to Run
 
-To run the analysis:
-1. Open `Final_NFL_Value_Analysis.ipynb` using Jupyter Notebook or VS Code.
-2. Run each cell in order.
-3. Ensure the following Python libraries are installed:
+1. Open `Project_DW2025_AidanTerrill.ipynb` in Jupyter or VS Code.
+2. Run the notebook cells from top to bottom.
+3. Make sure these libraries are installed:
    - pandas
    - numpy
    - matplotlib
